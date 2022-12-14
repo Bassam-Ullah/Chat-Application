@@ -1,0 +1,10 @@
+nb-layout {
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+nb-chat {
+  max-width: 600px;
+  /* margin: 16px; */
+}

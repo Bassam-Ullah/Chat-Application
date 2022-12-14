@@ -1,0 +1,30 @@
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <h3>LOGIN FORM</h3>
+
+  <label for="username"><h4>USERNAME</h4></label>
+  <input
+    type="text"
+    placeholder="EMAIL"
+    id="username"
+    formControlName="username"
+  />
+
+  <label for="password"><h4>PASSWORD</h4></label>
+  <input
+    type="password"
+    placeholder="PASSWORD"
+    id="password"
+    formControlName="password"
+  />
+  <button><span>LOGIN </span></button>
+  <p>or Login with</p>
+  <div class="social">
+    <div (click)="loginViaGoogle()" class="go">
+      <p>Google</p>
+    </div>
+  </div>
+</form>
